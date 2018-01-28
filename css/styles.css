@@ -1,5 +1,210 @@
+/* Set basic html styles */
 html{
   font-size: 18px;
   font-family: Helvetica;
   font-weight: bold;
+}
+header nav{
+  background-color: CadetBlue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container{
+  margin: auto;
+  max-width: 960px;
+}
+/* First section of page, main banner */
+header{
+  background-image: url("../resources/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .container{
+  height: 30rem;
+
+}
+.flex-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo img{
+  height: 1.5rem;
+  width: auto;
+  padding: 0 1rem 0 2rem;
+}
+ul{
+  margin-right: 1rem;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0;
+}
+.trunctuated-menu{
+  display: none;
+}
+.slogan{
+background-color: white;
+display: inline-block;
+color: black;
+margin-top: 10rem;
+margin-right: -2rem;
+font-weight: bold;
+padding: 1.5rem 5rem;
+}
+.slogan h1{
+font-size: 2rem;
+line-height: 1.5rem;
+}
+/* Second section of page, services */
+.container .services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto 0 auto;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  margin: 3rem;
+  width: 6rem;
+  text-align: center;
+}
+.service img{
+  margin-bottom: 1rem;
+}
+.exam img{
+  width: 3.5rem;
+  height: auto;
+}
+.fitting img{
+  width: 5rem;
+  height: auto;
+}
+.delivery img{
+  width: 5rem;
+  height: auto;
+}
+
+/* Third section, product and contact */
+.products{
+  margin-top: 3rem;
+}
+.products .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.product{
+  width: 35%;
+  margin-right: 5%;
+}
+.product .title{
+  background-color: CadetBlue;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+}
+.product h3{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.product .content{
+  margin-top: 1rem;
+
+}
+footer .container{
+  margin-top: 5rem;
+  padding: 4rem 0;
+  background-color: azure;
+}
+footer img{
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0 4rem;
+}
+/* media queries */
+@media only screen and (max-width: 1024px){
+  header{
+    max-width: 100%;
+    height: 22rem;
+  }
+  .flex-contact{
+    justify-content: center;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+  }
+  .slogan{
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+}
+@media only screen and (max-width:700px){
+  header{
+    max-width: 100%;
+  }
+  .menu{
+    display: none;
+  }
+  .trunctuated-menu{
+    display: block;
+  }
+  .container{
+    max-width: 100%;
+  }
+
+}
+@media only screen and (max-width: 560px){
+  .container{
+  }
+  header{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .logo span{
+    display: none;
+  }
+  .banner{
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .flex-container{
+    margin: 9rem auto 0 auto;
+  }
+  .slogan{
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+  .services .container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3.7rem;
+  }
+  .service{
+    margin-top: 1.54rem;
+    font-size: 0.77rem;
+  }
+  .products{
+    margin-top: 3.77rem;
+  }
+  .products .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
